@@ -1,17 +1,9 @@
 from flask import request
 from flask_restful import Resource
 
-#from api.schemas.user import UserSchema
+from api.schemas.user import UserSchema
 from extensions import db
-#from models import User
-
-class UserList(Resource):
-    def get(self):
-        return {'messgae': 'All working for now guyssss'}
-
-class UserResource(Resource):
-    def get(self, user_id):
-        return {'message':'Yup working for this as well guysss', 'id':user_id}
+from models import User
 
 """
 class UserList(Resource):
